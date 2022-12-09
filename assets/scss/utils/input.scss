@@ -1,0 +1,46 @@
+.primary-input{
+    position: relative;
+    padding: 15px 20px;
+    border: 1px solid $dark-blue;
+    border-radius: 45px;
+    width: 50%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    transition: width 2s;
+    background: white;
+
+
+    input{
+        border: transparent;
+        background: transparent;
+        font-size: 17px;
+        color: $dark-blue;
+        position: absolute;
+        left: 60px;
+        &:focus-visible {
+            outline: transparent
+        }
+    }
+    i{
+        position: absolute;
+        font-size: 31px;
+    }
+
+    &:hover,&:focus{
+        background: #F4F0F0;
+    }
+}
+.search{
+    i{
+        right: 17px;
+    }
+    input{
+        position: inherit;
+        left: inherit;
+    }
+    &.active,&:hover,&:focus{
+        background: transparent;
+        width: 100%;
+    }
+}

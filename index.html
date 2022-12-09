@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fonts/style.css">
+    <title>Html-Css Animations</title>
+</head>
+<body>
+    <div class="container">
+      <div class="mt-5 row">
+
+        <div class="col-md-6 col-sm-12 mb-50">
+          <h3 class="primary--title">Button Example</h3>
+          <button class="primary-btn">Click here to</button>
+        </div>
+        
+        <div class="col-md-6 col-sm-12 mb-50">
+          <h3 class="primary--title">Search Example</h3>
+          <button id="primary-search" onclick="search()" class="primary-input search">
+            <input>
+            <i class="icon-search"></i>
+          </button>
+        </div>
+
+        <div class="col-md-4 col-sm-12 mb-50">
+          <h3 class="primary--title">Form Example</h3>
+            <button class="primary-input mb-20">
+              <i class="icon-user"></i>
+              <input placeholder="Login">
+            </button>
+            <button class="primary-input">
+              <input placeholder="Password".>
+              <i class="icon-key"></i>
+            </button>
+        </div>
+
+        <div class="col-md-8 col-sm-12 mb-50">
+          <h3 class="primary--title mt-50">Steps Example</h3>
+          <ul class="steps">
+            <li>
+              <div class="step-background"></div>
+              <span class="step-title">Step1</span>
+            </li>
+            <li>
+              <div class="step-background"></div>
+              <span class="step-title">Step1</span>
+            </li>
+            <li>
+              <div class="step-background"></div>
+              <span class="step-title">Step1</span>
+            </li>
+            <li>
+              <div class="step-background"></div>
+              <span class="step-title">Step1</span>
+            </li>
+            <li>
+              <div class="step-background"></div>
+              <span class="step-title">Step1</span>
+            </li>
+            <li>
+              <div class="step-background"></div>
+              <span class="step-title">Step1</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 col-sm-12 mb-50">
+          <h3 class="primary--title">Social Media Example</h3>
+          <div class="d-flex justify-content-between align-items-center">
+            <button class="social-icon">
+              <i class="instagram icon-instagram"></i>
+            </button>
+            <button class="social-icon">
+              <i class="facebook icon-facebook"></i>
+            </button>
+            <button class="social-icon">
+              <i class="twitter icon-twitter"></i>
+            </button>
+            <button class="social-icon">
+              <i class="pinterest icon-pinterest"></i>
+            </button> 
+            <button class="social-icon">
+              <i class="tiktok icon-tiktok"></i>
+            </button>
+            <button class="social-icon">
+              <i class="whatsapp icon-whatsapp"></i>
+            </button>
+            <button class="social-icon">
+              <i class="youtube icon-youtube"></i>
+            </button>
+          </div>
+        </div>
+
+        
+
+      </div>
+    </div>
+</body>
+<script>
+  function search() {
+    var element = document.getElementById("primary-search");
+    element.classList.add("active");
+  }
+  </script>
+</html>

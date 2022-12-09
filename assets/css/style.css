@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Lora&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.primary-btn {
+  position: relative;
+  color: #0C5576;
+  font-size: 32px;
+  font-weight: 500;
+  border-radius: 45px;
+  border: 3px solid #0692BC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 428px;
+  height: 85px;
+}
+.primary-btn:hover::before {
+  content: "Hover";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 102%;
+  vertical-align: middle;
+}
+.primary-btn::before {
+  content: "";
+  width: auto;
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  left: -4px;
+  top: -4px;
+  border-radius: 55px;
+  background: #0692BC;
+  transition: width 2s;
+}
+
+.primary-input {
+  position: relative;
+  padding: 15px 20px;
+  border: 1px solid #0C5576;
+  border-radius: 45px;
+  width: 50%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  transition: width 2s;
+  background: white;
+}
+.primary-input input {
+  border: transparent;
+  background: transparent;
+  font-size: 17px;
+  color: #0C5576;
+  position: absolute;
+  left: 60px;
+}
+.primary-input input:focus-visible {
+  outline: transparent;
+}
+.primary-input i {
+  position: absolute;
+  font-size: 31px;
+}
+.primary-input:hover, .primary-input:focus {
+  background: #F4F0F0;
+}
+
+.search i {
+  right: 17px;
+}
+.search input {
+  position: inherit;
+  left: inherit;
+}
+.search.active, .search:hover, .search:focus {
+  background: transparent;
+  width: 100%;
+}
+
+.primary--title {
+  color: #0C5576;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 0;
+  margin-top: 30px;
+}
+.steps li {
+  position: relative;
+  height: 92px;
+  width: 107px;
+}
+.steps li::after {
+  content: "";
+  position: absolute;
+  background: #000000;
+  width: 8px;
+  height: 8px;
+  bottom: -20px;
+  left: 50px;
+  border-radius: 50px;
+  z-index: 1111;
+}
+.steps li:hover .step-background {
+  border: none;
+  background: #6EBE45;
+  border-radius: 0px 50% 50% 50%;
+  transform: rotate(223deg);
+  height: 5rem;
+  width: 5rem;
+  position: relative;
+  left: 14px;
+  top: -18px;
+  margin: 0;
+}
+.steps li:hover .step-title {
+  top: -75px;
+}
+.steps .step-background {
+  border: none;
+  height: 50px;
+  width: 110px;
+  padding: 10px 20px;
+  background: #0692BC;
+  border-radius: 30px;
+  font-size: 23px;
+  font-weight: 700;
+  color: white;
+  position: relative;
+  bottom: -30px;
+  transition: background-color 0.5s ease;
+}
+.steps .step-title {
+  position: relative;
+  top: -13px;
+  right: -23px;
+  color: white;
+  font-size: 23px;
+  font-weight: 700;
+}
+.steps::after {
+  content: "";
+  position: absolute;
+  background: #BCBCBC;
+  width: 86%;
+  height: 8px;
+  bottom: -20px;
+  left: 51px;
+}
+
+.social-icon {
+  border: none;
+  background: transparent;
+}
+.social-icon i {
+  padding: 10px;
+  border-radius: 40px;
+}
+.social-icon .facebook {
+  color: #337FFF;
+}
+.social-icon .facebook:hover {
+  background: #337FFF;
+  color: white;
+}
+.social-icon .instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.social-icon .twitter {
+  color: #33CCFF;
+}
+.social-icon .twitter:hover {
+  background: #33CCFF;
+  color: white;
+}
+.social-icon .pinterest {
+  color: #FF0000;
+}
+.social-icon .pinterest:hover {
+  background: #FF0000;
+  color: white;
+}
+.social-icon .tiktok {
+  color: #000000;
+}
+.social-icon .tiktok:hover {
+  background: #000000;
+  color: white;
+}
+.social-icon .whatsapp {
+  color: #00D95F;
+}
+.social-icon .whatsapp:hover {
+  background: #00D95F;
+  color: white;
+}
+.social-icon .youtube {
+  color: #FF0000;
+}
+.social-icon .youtube:hover {
+  background: #FF0000;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
